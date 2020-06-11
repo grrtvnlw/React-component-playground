@@ -1,0 +1,22 @@
+.stepper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: purple;
+  color: white;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+}
+
+input {
+  height: 24px;
+  width: 75px;
+  text-align: center;
+  font-size: 20px;
+  padding-left: 15px;
+}
