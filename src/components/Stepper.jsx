@@ -11,12 +11,12 @@ export default class Stepper extends Component {
   }
 
   onChange = (event) => {
-    // if (typeof(event.target.value) === Number) {
+    if (isNaN(event.target.value) == false) {
       const newValue = event.target.value;
       this.setState({ count: newValue })
-    // } else {
-    //   alert('Enter a number fool!')
-    // }
+    } else {
+      alert('Enter a number fool!')
+    }
   }
 
   onIncrementClick = () => {
@@ -36,7 +36,7 @@ export default class Stepper extends Component {
       <div>
         <div className="stepper">
           <button onClick={ this.onIncrementClick }>+</button>
-          <input type="number" value={ this.state.count } onChange={ this.onChange }></input>
+          <input type="text" value={ this.state.count } onChange={ this.onChange }></input>
           <button onClick={ this.onDecrementClick }>-</button>
         </div>
       </div>
